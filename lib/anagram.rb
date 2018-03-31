@@ -9,5 +9,5 @@ end
 
 def match(anagram)
   self.split(//).permutation.map {|a| a.join}
-
+binding.pry
 end
