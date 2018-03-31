@@ -8,11 +8,6 @@ def initialize(word)
 end
 
 def match(anagram)
-  anagram.find_all do |words|
-    if word.split("").sort == self.word.split("").sort
-      word
-    end
-  end
-end
+  self.split(//).permutation.map {|a| a.join}
 
 end
